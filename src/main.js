@@ -4,12 +4,15 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import { BootstrapVue, IconsPlugin, BootstrapVueIcons } from 'bootstrap-vue'
+import VueYouTubeEmbed from 'vue-youtube-embed'
 
 // Import Bootstrap and BootstrapVue CSS files (order is important)
 // import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue-icons.min.css'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 // import '../node_modules/bootstrap/dist/css/bootstrap.css'
 // import '../node_modules/bootstrap/dist/js/bootstrap.bundle'
@@ -21,7 +24,7 @@ Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
-
+Vue.use(VueYouTubeEmbed)
 Vue.use(BootstrapVueIcons)
 new Vue({
   el: '#app',
